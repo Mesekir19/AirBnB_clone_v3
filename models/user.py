@@ -8,6 +8,7 @@ from sqlalchemy import Column, String
 from sqlalchemy.orm import relationship
 import hashlib
 
+
 class User(BaseModel, Base):
     """Representation of a user """
     if models.storage_t == 'db':
@@ -23,6 +24,7 @@ class User(BaseModel, Base):
         password = ""
         first_name = ""
         last_name = ""
+
 
     def __init__(self, *args, **kwargs):
         """initializes user"""

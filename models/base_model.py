@@ -74,7 +74,7 @@ class BaseModel:
         if mod.__name__ != "models.engine.file_storage":
             if "password" in new_dict:
                 del new_dict["password"]
-	return new_dict
+        return new_dict
 
     def delete(self):
         """delete the current instance from the storage"""
